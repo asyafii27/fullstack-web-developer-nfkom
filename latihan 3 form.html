@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Form</title>
+</head>
+
+<body>
+    <form name="Latihanbuatform" method="GET" action="#">
+        <!-- Untuk prosesing-->
+        <table border="1" align="center" cellpadding="20" width="40%">
+            <thead>
+                <tr bgcolor="blue">
+                    <th colspan="2">Latihan Form</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><label>Nama</label></td>
+                    <td>
+                        <input type="text" name="nama" value="" placeholder="nama lengkap" size="50" maxlength="50">
+                        <!-- <maxlength => Digunakan untuk maksimal inputannya/karakternya-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Email</label></td>
+                    <td>
+                        <input type="text" name="email" value="" placeholder="email anda" size="50" maxlength="50">
+                        <!-- <maxlength => Digunakan untuk maksimal inputannya/karakternya-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Jenis Kelamin</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="L" checked>Laki-laki &nbsp;&nbsp;
+                        <input type="radio" name="gender" value="L" />Perempuan
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top"><label>Hobby</label></td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="Membaca" />Membaca<br>
+                        <input type="checkbox" name="hobby" value="Membaca" />Menulis<br>
+                        <input type="checkbox" name="hobby" value="Membaca" />Olahraga<br>
+                        <input type="checkbox" name="hobby" value="Membaca" />Memasak<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Pendidikan</label></td>
+                    <td>
+                        <select name="pendidikan">
+                            <option value="">---Pilih Pendidikan</option>
+                            <option value="SMA">SMA</option>
+                            <option value="SMK">SMK</option>
+                            <option value="S1" selected>S1</option> <!-- -->
+                            <option value="S2">S2</option>
+                            <option value="S3">S3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top"><label>Komentar</label></td>
+                    <td>
+                        <textarea name="komentar" cols="50" rows="5" placeholder="Komentar Anda"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th bgcolor="blue" colspan="2">
+                        <input type="submit" name="proses" value="Kirim"> &nbsp;&nbsp;
+                        <input type="reset" name="unproses" value="Batal">
+                    </th>
+                </tr>
+            </tfoot>
+
+        </table>
+    </form>
+</body>
+
+</html>
+
+<!--
+    &nbsp => Digunakan untuk spasi tabel
+    textarea tidak memiliki atribut value, textare, dan checked
+-->
